@@ -3,7 +3,6 @@ $(document).ready(function(){
 
 	// Build the page here.
 
-
 	var sites = ["baylinerapparel", "capriottisgear", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel", "notarealsitelmao"];
 
 	var checkStatus = function(company){
@@ -26,7 +25,7 @@ $(document).ready(function(){
 
 		$("#ulist").append(li);
 
-		checkStatus(sites[site])
+		checkStatus(sites[site]);
 	};
 
 //Circle Graph
