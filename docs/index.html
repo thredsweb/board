@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>thredsweb board</title>
+	<title>Threds Board</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/ptandy.js"></script>
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1 class="placeholder"> Henlo Werld </h1>
+	<h1 class="placeholder">Hello World</h1>
+
+	<div data-ng-app="ptandy" data-ng-controller="pController">{{ test }}</div>
 </body>
 </html>
