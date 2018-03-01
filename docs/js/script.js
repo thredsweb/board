@@ -1,57 +1,55 @@
-// This makes sure the script doesn't act until the page is loaded.
 $(document).ready(function(){
-
-	// Build the page here.
 
 	var sites = ["baylinerapparel", "capriottisgear", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel", "notarealsitelmao"];
 
-	var checkStatus = function(company){
+	function stallForTime() {
+		return new Promise(resolve => {
+			setTimeout(() => {
+				resolve('resolved');
+			}, 500);
+		});
+	}
+
+	function checkStatus (company) {
 		var favid = "img." + company;
 		var aid = "a." + company;
-		$(aid).css({
-		});
+
+		$(aid).addClass('status_red');
 
 		$(favid).on('load', function() {
-			$(aid).css({
-
-			});
+			$(aid).removeClass('status_red').addClass('status_green');
 		});
-	};
+	}
 
-	$('#ulist').append(123);
-	
+	async function countEm(){
+		const waiting = await stallForTime();
+		$('#status_text').empty().append($('.status_green').length + ' / ' + sites.length + ' sites are live');
+		if (($('.status_green').length / sites.length) === 1) {
+			$('#status_text').append('<br/>All Systems Functional');
+		} else {
+			$('#status_text').append('<br/>Partial Problems');
+		}
+	}
+
 	for (site in sites) {
 		var website = "https://www." + sites[site] + ".com";
 		var img = '<img class="' + sites[site] + '" style="display: none;" src="' + website + '/favicon.ico">';
 		var li = '<li> <a class="' + sites[site] + '" href="' + website + '">' + img + sites[site] + '</a></li>';
 
-		$("#ulist").append(li);
+		$("#status_ul").append(li);
+		checkStatus(sites[site])
+	}
 
-		checkStatus(sites[site]);
-	};
+	$('#status_text').append('Checking Status...');
+	countEm();
 
-//Circle Graph
+	// $('#status_text').append($('.status_green').length + ' / ' + sites.length + ' sites are live');
+	// if (($('.status_green').length / sites.length) === 1) {
+	// 	$('#status_text').append('<br/>All Systems Functional');
+	// } else {
+	// 	$('#status_text').append('<br/>Partial Problems');
+	// }
 
-$('#percent').on('change', function(){
-  var val = parseInt($(this).val());
-  var $circle = $('#svg #bar');
-  
-  if (isNaN(val)) {
-   val = 100; 
-  }
-  else{
-    var r = $circle.attr('r');
-    var c = Math.PI*(r*2);
-   
-    if (val < 0) { val = 0;}
-    if (val > 100) { val = 100;}
-    
-    var pct = ((100-val)/100)*c;
-    
-    $circle.css({ strokeDashoffset: pct});
-    
-    $('#cont').attr('data-pct',val);
-  }
-});
+	//Circle Graph
 
 });
