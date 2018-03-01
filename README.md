@@ -1,3 +1,3 @@
-# This is a git for simple a simple website for use by Threds.
+# This is a simple git for Threds, Inc.
 
 ## Do not ever publish any sensitive information in any files on this git.
