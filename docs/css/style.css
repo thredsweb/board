@@ -1,0 +1,120 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url('https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-size: cover;
+  background-color:#263238;
+  background-blend-mode: multiply;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+#body_wrapper {
+  background-size: cover;
+}
+#widget_container {
+  height: 100%;
+  width: 100%;
+}
+#flex-container {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-item {
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#title {
+  text-align: center;
+  color: white;
+  font-family: 'Open-Sans', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: capitalize;
+  padding: 25px;
+}
+
+a {
+		font-size: 14px;
+    font-weight: bold;
+		font-family: 'open-sans', 'Helvetica', sans-serif;
+		color: #00E676;
+    text-decoration: none;
+    text-transform: capitalize;
+	}
+a.notarealsitelmao {
+  color: #FF3D00;
+}
+
+#ulist {
+  list-style: none;
+  line-height: 20px;
+}
+a:hover {
+  color: #B9F6CA;
+}
+#svg circle {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #666;
+  stroke-width: 1em;
+}
+#svg #bar {
+  stroke: #00E676;
+}
+#cont {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin: 4em auto;
+  border-radius: 100%;
+  position: absolute;
+}
+#cont:after {
+  position: absolute;
+  display: block;
+  height: 160px;
+  width: 160px;
+  left: 50%;
+  top: 50%;
+  box-shadow: inset 0 0 1em black;
+  content: attr(data-pct)"%";
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 100%;
+  line-height: 160px;
+  font-size: 2em;
+  text-shadow: 0 0 0.5em black;
+  color: white;
+  text-align: center;
+  font-family:'Open-Sans', 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+#status-text {
+  display: block;
+  padding: 10px;
+  font-family:'Open-Sans', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00E676;
+  margin: 0 auto;
+  background-color: #263238;
+  
+}
