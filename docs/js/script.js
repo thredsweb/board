@@ -18,7 +18,9 @@ $(document).ready(function(){
 		});
 	};
 
-	for (site in sites){
+	$('#ulist').append(123);
+	
+	for (site in sites) {
 		var website = "https://www." + sites[site] + ".com";
 		var img = '<img class="' + sites[site] + '" style="display: none;" src="' + website + '/favicon.ico">';
 		var li = '<li> <a class="' + sites[site] + '" href="' + website + '">' + img + sites[site] + '</a></li>';
