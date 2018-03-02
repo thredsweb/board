@@ -62,6 +62,7 @@ $(document).ready( function() {
 		}
 	}
 
+	$('#status_widget').append('<button id="status_reload">Reload</button>');
 	$('#status_text').append('Checking Status...');
 	statusBuild();
 	countEm();
