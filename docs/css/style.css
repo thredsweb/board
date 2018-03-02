@@ -179,3 +179,166 @@ body {
   order: 2;
   margin: 25px auto;
 }
+
+/*Bandwidth Widget*/
+#inksoft_widget {
+  height: 100%;
+  border-radius: 3px;
+order: 1;
+font-family: 'Lato', 'Open-Sans', sans-serif;
+-webkit-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+-moz-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+background: #455A64;
+background: -webkit-linear-gradient(to bottom, #455A64, #263238);
+background: linear-gradient(to bottom, #455A64, #263238);
+}
+
+.section:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+/*
+ * Graph section
+ */
+.section-graph {
+  position: relative;
+  height: 300px;
+  color: #fff;
+  background: rgba(0,0,0,0);
+  
+  
+  .graph-info {
+    z-index: 99;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 21px;
+    width: 100%;
+    
+    .graph-info-big {
+      font-size: 24px;
+      float: left;
+      margin-left: 3px;
+    }
+  
+    .graph-info-small {
+      font-size: 24px;
+      font-weight: normal;
+      color: #00E676;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+
+/*
+ * Info Section
+ */
+
+h3 {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.section-info {
+  padding: 21px 21px 41px;
+  color: #78909C;
+  overflow: hidden;
+  text-align:center;
+}
+
+.info-time {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info-block {
+  background-color: #f5f0ec;
+  text-align: center;
+  width: 120px;
+  border-radius: 3px;
+  float: left;
+  padding: 4px 0;
+  
+  &.last {
+    margin-left: 1px;
+  }
+  
+  dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    font-size: 12px;
+  }
+}
+
+.info-aapl {
+  float: left;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    display: block;
+    width: 9px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: #f5f0ec;
+    float: left;
+    position: relative;
+    
+    span {
+      display: block;
+      width: 9px;
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+    }
+    
+    span.orange {
+      background-color: #e75e3a;
+    }
+    
+    span.green {
+      background-color: #4eaf7c;
+    }
+  }
+}
+
+.yearly-change {
+  width: 94px;
+  float: right;
+  
+  span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: #4eaf7c;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    
+    em {
+      color: rgba(255, 255, 255, .7);
+    }
+  }
+}
