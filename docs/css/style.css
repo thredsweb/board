@@ -19,13 +19,22 @@ body {
 
 .title {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+  padding-bottom: 25px;
+  font-weight: bold;
 }
 
 #status_widget {
   order: 1;
   font-family: 'Open-Sans', 'Helvetica', sans-serif;
-
+  margin: 25px auto;
+  padding: 25px;
+  -webkit-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+  -moz-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+  -box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+  background: #37474F;
+  background: -webkit-linear-gradient(to bottom, #37474F, #263238);
+  background: linear-gradient(to bottom, #3747F, #263238);
   counter-reset: status_green;
 }
 
