@@ -122,6 +122,15 @@ body {
   border-radius: 3px;
 }
 
+#order_count {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+  -moz-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+  -box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
+}
+
 #svg circle {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 1s linear;
