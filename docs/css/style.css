@@ -47,7 +47,6 @@ body {
   background: linear-gradient(to bottom, #455A64, #263238);
   border-radius: 3px;
   color: #78909C;
-  counter-reset: status_green;
 }
 
 #status_ul, #status_circle {
@@ -140,6 +139,7 @@ body {
   font-weight: bold;
 }
 
-#status_widget_2 {
+#_widget {
   order: 2;
+  margin: 25px auto;
 }
