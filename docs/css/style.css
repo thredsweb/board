@@ -78,7 +78,7 @@ body {
   display: block;
   height: 200px;
   width: 200px;
-  margin: 2em auto;
+  margin: 2em 2em;
   box-shadow: 0 0 1em black;
   border-radius: 100%;
   position: relative;
