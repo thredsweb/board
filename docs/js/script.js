@@ -17,7 +17,6 @@ $(document).ready( function() {
 		const waiting = await stallForTime();
 		var $circle = $('#svg #bar');
 		var $green = $('.status_green');
-		var $red = $('.status_red');
 		var status_val = ($green.length / sites.length) * 100;
 
 		$('#status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
