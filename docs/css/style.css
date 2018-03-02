@@ -135,7 +135,7 @@ body {
   font-size: 132px;
   font-weight: bold;
   text-align: center;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 5px black;
 }
 
 #svg circle {
