@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-	  <header id="nav"></header>
-    <div id="body_wrapper">
+<head>
+	<!--js imports-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<!--stylesheets-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header id="nav"></header>
+	<div id="body_wrapper">
+
+		<!-- Begin Widget A -->
 		<div id="status_widget">
 			<div class="title">Volusion Live Status</div>
 			<ul id="status_ul"></ul>
@@ -23,23 +28,26 @@
 				</div>
 			</div>
 			<div id="status_text"></div>
-			<div id="button_wrapper">
-			<button id="status_reload">Reload</button>
+			<div id="status_button_wrapper">
+				<button id="status_reload">Reload</button>
 			</div>	
 		</div>
-	    <!--End Widget A-->
-	    <div id="status_widget">
+		<!-- End Widget A -->
+
+		<!-- Begin Widget B -->
+		<div id="_widget">
 			<div class="title">Inksoft Orders</div>
 			<div id="order_status">
-				<div id="order_count" data-pct="0">
-				</div>
+				<div id="order_count" data-pct="0"></div>
 			</div>
-			<div id="status_text"></div>
+			<div id="_text"></div>
 			<div id="button_wrapper">
-			<button id="status_reload">Reload</button>
+				<button id="status_reload">Reload</button>
 			</div>	
 		</div>
-	  <!--End Widget B-->
+		<!-- End Widget B -->
+
 	</div>
-	</body>
+</body>
+
 </html>
