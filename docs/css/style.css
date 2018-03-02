@@ -91,7 +91,7 @@ body {
 }
 #status_reload:hover {
   background: #00E676;
-  color: #263238;
+  color: #263238 !important;
 }
 
 #button_wrapper {
