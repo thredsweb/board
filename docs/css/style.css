@@ -35,6 +35,7 @@ body {
   background: #37474F;
   background: -webkit-linear-gradient(to bottom, #37474F, #263238);
   background: linear-gradient(to bottom, #3747F, #263238);
+  border-radius: 3px;
   counter-reset: status_green;
 }
 
