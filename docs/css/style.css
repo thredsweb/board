@@ -1,7 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@font-face {
-  font-family: Lato;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/176026/ProximaNova-Regular.otf);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
   
 body {
   height: 100%;
