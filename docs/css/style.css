@@ -41,6 +41,7 @@ body {
 
 #status_ul, #status_circle {
   float: left;
+  padding-left: 1em;
 }
 
 #status_ul, #status_ul > li > a {
