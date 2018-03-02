@@ -87,8 +87,11 @@ body {
   width: 130px;
   letter-spacing: 1px;
   font-weight: bold;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
+}
+
+#button_wrapper {
+
 }
 
 #svg circle {
