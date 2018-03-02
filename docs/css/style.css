@@ -101,6 +101,7 @@ body {
   font-size: 2em;
   text-align: center;
   text-shadow: 0 0 0.5em black;
+  font-weight: bold;
 }
 
 #status_widget_2 {
