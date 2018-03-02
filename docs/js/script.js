@@ -13,7 +13,7 @@ $(document).ready( function() {
 		});
 	}
 
-	async function countEm(){
+	async function countEm() {
 		const waiting = await stallForTime();
 		var $circle = $('#svg #bar');
 		var $green = $('.status_green');
