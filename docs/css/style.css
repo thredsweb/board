@@ -65,6 +65,8 @@ body {
 
 #status_text {
   text-align: center;
+  line-height: 25px;
+  font-weight: bold;
 }
 
 #svg circle {
