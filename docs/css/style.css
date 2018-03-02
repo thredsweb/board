@@ -10,6 +10,11 @@ body {
   color: white;
 }
 
+#nav {
+  height: 80px;
+  background-color: black;
+}
+
 #body_wrapper {
   display: flex;
   flex-direction: row;
