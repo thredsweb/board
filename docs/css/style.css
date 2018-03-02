@@ -80,12 +80,15 @@ body {
 #status_reload {
   border: 2px solid #00E676;
   border-radius: 40px;
+  background: transparent;
   color: #FF3D00;
   height: 40px;
   text-align: center;
   width: 130px;
   letter-spacing: 1px;
   font-weight: bold;
+  text-transform: uppercase;
+  
 }
 
 #svg circle {
