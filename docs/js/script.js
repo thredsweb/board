@@ -5,10 +5,7 @@ pApp.controller("ngBody", ['$scope', function($scope) {
 }])
 .directive('ngWidget', function() {
 	return {
-		restrict : 'A',
-		templateUrl : function(elem, attr) {
-			return 'widgets/' + attr.file + '.html'
-		}
+		templateUrl : 'widgets/status.html'
 	}
 });
 
