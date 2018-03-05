@@ -84,7 +84,7 @@ $(document).ready( function() {
 });
 
 //Bandwith Widget
-
+/*
 $(function () {
   
   function generateNumber(min, max) {
@@ -182,5 +182,7 @@ $(function () {
 
     }, 3000);
   });
-  
+
+
 });
+*/
