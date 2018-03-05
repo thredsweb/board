@@ -1,9 +1,9 @@
-var pApp = angular.module('ptandy', []);
+var pApp = angular.module('pApp', []);
 
 pApp.controller("ngBody", ['$scope', function($scope) {
-	
+	dummy : 'dummy',
 }])
-.directive('ngWidget', function() {
+.directive('ngwidget', function() {
 	return {
 		templateUrl : 'widgets/status.html'
 	}
