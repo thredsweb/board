@@ -1,3 +1,17 @@
+var pApp = angular.module('ptandy', []);
+
+pApp.controller("ngBody", ['$scope', function($scope) {
+	
+}])
+.directive('ngWidget', function() {
+	return {
+		restrict : 'A',
+		templateUrl : function(elem, attr) {
+			return 'widgets/' + attr.file + '.html'
+		}
+	}
+});
+
 $(document).ready( function() {
 
 	var sites = ["baylinerapparel", "capriottisgear", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel", "corppromoitems"];

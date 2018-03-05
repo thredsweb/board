@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html x-ng-app="pApp">
 
 <head>
 	<!--js imports-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 
@@ -18,22 +19,7 @@
 	<div id="body_wrapper">
 
 		<!-- Begin Widget A -->
-		<div id="status_widget">
-			<div class="title">Volusion Live Status</div>
-			<ul id="status_ul"></ul>
-			<div id="status_circle">
-				<div id="cont" data-pct="100">
-					<svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-						<circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-						<circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-					</svg>
-				</div>
-			</div>
-			<div id="status_text"></div>
-			<div id="status_button_wrapper">
-				<button id="status_reload">Reload</button>
-			</div>	
-		</div>
+		<div x-ngWidget file="status" id="status_widget"></div>
 		<!-- End Widget A -->
 
 		<!-- Begin Widget B -->
