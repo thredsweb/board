@@ -25,7 +25,7 @@ $(document).ready( function() {
 	}
 
 	async function countEm() {
-		const waiting = await stallForTime();
+		var waiting = await stallForTime();
 		var $circle = $('#svg #bar');
 		var $green = $('.status_green');
 		var status_val = ($green.length / sites.length) * 100;
@@ -52,6 +52,7 @@ $(document).ready( function() {
 
 	function resetStatus() {
 			$('#status_ul').children().remove();
+			// reset the circle graph
 	}
 
 	function stallForTime() {
@@ -61,6 +62,7 @@ $(document).ready( function() {
 			}, 666);
 		});
 	}
+
 	function statusBuild() {
 		for (site in sites) {
 			var website = "https://www." + sites[site] + ".com";
