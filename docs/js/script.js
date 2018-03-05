@@ -1,7 +1,7 @@
 var pApp = angular.module('pApp', []);
 
 pApp.controller("ngBody", ['$scope', function($scope) {
-	dummy : 'dummy',
+	dummy : 'dummy'
 }])
 .directive('ngwidget', function() {
 	return {
