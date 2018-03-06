@@ -3,7 +3,7 @@
 <!-- for site in sites, build this list -->
 <ul id="status_ul"></ul>
 	<li ng-repeat="site in sites" class="{{site}} status_red">
-		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" onload="statusGreen()" style="display: none">
+		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" onload="statusGreen({{site}})" style="display: none">
 		{{ site }}
 	</li>
 <!-- need a template which reads other fields -->
