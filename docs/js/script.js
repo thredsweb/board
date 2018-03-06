@@ -11,16 +11,6 @@ pApp.directive('ngwidget', function() {
 	$scope.sites = sites;
 }]);
 
-function statusGo() {
-	$('#status_reload').on( 'click', function () {
-		resetStatus();
-	});
-	
-	$('#status_text').append('Checking<br/>Status...');
-	statusCheck();
-	countEm();
-}
-
 $(document).ready( function() {
 
 	//These two are kindof confusingly named, sorry
@@ -92,7 +82,15 @@ $(document).ready( function() {
 		});
 	}
 
-
+	function statusGo() {
+		$('#status_reload').on( 'click', function () {
+			resetStatus();
+		});
+		
+		$('#status_text').append('Checking<br/>Status...');
+		statusCheck();
+		countEm();
+	}
 
 	statusGo();
 
