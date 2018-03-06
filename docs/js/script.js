@@ -26,11 +26,12 @@ $(document).ready( function() {
 		var aid = "a." + company;
 		$(aid).addClass('status_red');
 		var imag = new Image();
-		imag.src = "https://www." + company + ".com/favicon.ico";
-		imag.onload(function() {
+		function statusCallback() {
 			console.log(company);
 			$(aid).removeClass('status_red').addClass('status_green');
-		});
+		}
+		imag.src = "https://www." + company + ".com/favicon.ico";
+		imag.onload = statusCallback;
 		// $(favid).on('load', function() {
 		// 	console.log(company);
 		// 	$(aid).removeClass('status_red').addClass('status_green');
