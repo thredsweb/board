@@ -38,7 +38,7 @@ $(document).ready( function() {
 		var $green = $('.status_green');
 		var status_val = ($green.length / sites.length) * 100;
 
-		$('.status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
+		$('#status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
 
 		if (($('.status_green').length / sites.length) === 1) {
 			$('#status_text').append('<br/>All Systems Functional');
