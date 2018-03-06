@@ -38,12 +38,12 @@ $(document).ready( function() {
 		var $green = $('.status_green');
 		var status_val = ($green.length / sites.length) * 100;
 
-		$('#status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
+		$('.status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
 
 		if (($('.status_green').length / sites.length) === 1) {
-			$('#status_text').append('<br/>All Systems Functional');
+			$('.status_text').append('<br/>All Systems Functional');
 		} else {
-			$('#status_text').append('<br/>Partial Problems');
+			$('.status_text').append('<br/>Partial Problems');
 		}
 
 		if (isNaN(status_val)) {
@@ -67,8 +67,6 @@ $(document).ready( function() {
 		var status_val = 0;
 		var r = $circle.attr('r');
 		var c = Math.PI*(r*2);
-		if (status_val < 0) { status_val = 0;}
-		if (status_val > 100) { status_val = 100;}
 		$circle.css({ strokeDashoffset: -(status_val / 100 * c)});
 		$('#cont').attr('data-pct', Math.floor(status_val));
 	}
@@ -81,11 +79,11 @@ $(document).ready( function() {
 		});
 	}
 
-	$('#status_text').append('Checking<br/>Status...');
+	$('.status_text').append('Checking<br/>Status...');
 	statusCheck();
 	countEm();
 
-	$('#status_reload').on( 'click', function () {
+	$('.status_reload').on( 'click', function () {
 		resetStatus();
 		statusCheck();
 		countEm();
