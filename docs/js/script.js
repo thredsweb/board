@@ -1,13 +1,20 @@
 var pApp = angular.module('pApp', []);
 
-pApp.controller("ngBody", ['$scope', function($scope) {
-	dummy : 'dummy'
-}])
-.directive('ngwidget', function() {
+pApp.directive('ngwidget', function() {
 	return {
 		templateUrl : 'widgets/status.html'
 	}
-});
+})
+.controller("status_widget", ['$scope', function($scope) {
+	$scope.sites = 
+		["baylinerapparel", "capriottisgear", "capriottisgear",
+		"copperfoodgear", "corppromoitems", "hatterasyachtsgear",
+		"malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear",
+		"meridianyachtsgear", "nautiquegear", "salsaritasgear",
+		"scapparel", "searaycollection", "shopsugarlands",
+		"whalerapparel", "corppromoitems"];
+}]);
+
 
 $(document).ready( function() {
 
