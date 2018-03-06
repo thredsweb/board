@@ -83,10 +83,10 @@ $(document).ready( function() {
 	}
 
 	function statusGo() {
-		$('#status_reload').on( 'click', function () {
+		$(document).on( 'click', '#status_reload', function () {
 			resetStatus();
 		});
-		
+
 		$('#status_text').append('Checking<br/>Status...');
 		statusCheck();
 		countEm();
