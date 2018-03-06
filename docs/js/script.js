@@ -14,12 +14,14 @@ $(document).ready( function() {
 
 	var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
 
-	function checkStatus (company) {
-		var favid = "img." + company;
-		var aid = "a." + company;
-		$(favid).on('load', function() {
-			$(aid).removeClass('status_red').addClass('status_green');
-		});
+	function checkStatus () {
+		for (site in sites) {
+			// var favid = "img." + site;
+			// var aid = "a." + site;
+			$("img." + site).on('load', function() {
+				$("a." + site).removeClass('status_red').addClass('status_green');
+			});
+		}
 	}
 
 	async function countEm() {
@@ -61,22 +63,12 @@ $(document).ready( function() {
 		});
 	}
 
-	// function statusBuild() {
-	// 	for (site in sites) {
-	// 		var website = "https://www." + sites[site] + ".com";
-	// 		var img = '<img class="' + sites[site] + '" style="display: none;" src="' + website + '/favicon.ico">';
-	// 		var li = '<li> <a class="' + sites[site] + '" href="' + website + '">' + img + sites[site] + '</a></li>';
-	
-	// 		$("#status_ul").append(li);
-	// 		checkStatus(sites[site])
-	// 	}
-	// }
-
 	$('#status_text').append('Checking Status...');
 	countEm();
 
 	$('#status_reload').on( 'click', () => {
 		resetStatus();
+		checkStatus();
 		countEm();
 	});
 });
