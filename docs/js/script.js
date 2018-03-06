@@ -60,7 +60,7 @@ $(document).ready( function() {
 
 	function resetStatus() {
 		// change status_text to "checking status..."
-		$('#status_text').empty().append('Checking Status...');
+		$('#status_text').empty().append('Checking<br/>Status...');
 
 		// reset the circle graph
 		var $circle = $('#svg #bar');
@@ -81,7 +81,7 @@ $(document).ready( function() {
 		});
 	}
 
-	$('#status_text').append('Checking Status...');
+	$('#status_text').append('Checking<br/>Status...');
 	statusCheck();
 	countEm();
 
