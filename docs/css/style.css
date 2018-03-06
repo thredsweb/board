@@ -60,10 +60,10 @@ body {
 #status_ul, #status_circle {
   float: left;
   padding-left: 1em;
+  list-style: none;
 }
 
 #status_ul, #status_ul > li > a {
-  list-style: none;
   line-height: 20px;
   text-decoration: none;
   text-transform: capitalize;

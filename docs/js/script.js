@@ -1,5 +1,9 @@
 var pApp = angular.module('pApp', []);
 
+function statusGreen() {
+	$(this).parent().removeClass('status_red').addClass('status_green');
+};
+
 pApp.directive('ngwidget', function() {
 	return {
 		templateUrl : 'widgets/status.html'
@@ -13,10 +17,6 @@ pApp.directive('ngwidget', function() {
 		"nautiquegear", "salsaritasgear", "scapparel",
 		"searaycollection", "shopsugarlands", "whalerapparel"];
 }]);
-
-function statusGreen() {
-	$(this).parent().removeClass('status_red').addClass('status_green');
-};
 
 /* $(document).ready( function() {
 
