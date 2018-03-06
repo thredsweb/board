@@ -41,9 +41,9 @@ $(document).ready( function() {
 		$('.status_text').empty().append($green.length + ' / ' + sites.length + ' Sites Are Live.');
 
 		if (($('.status_green').length / sites.length) === 1) {
-			$('.status_text').append('<br/>All Systems Functional');
+			$('#status_text').append('<br/>All Systems Functional');
 		} else {
-			$('.status_text').append('<br/>Partial Problems');
+			$('#status_text').append('<br/>Partial Problems');
 		}
 
 		if (isNaN(status_val)) {
@@ -60,7 +60,7 @@ $(document).ready( function() {
 
 	function resetStatus() {
 		// change status_text to "checking status..."
-		$('.status_text').empty().append('Checking<br/>Status...');
+		$('#status_text').empty().append('Checking<br/>Status...');
 
 		// reset the circle graph
 		var $circle = $('#svg #bar');
@@ -79,11 +79,11 @@ $(document).ready( function() {
 		});
 	}
 
-	$('.status_text').append('Checking<br/>Status...');
+	$('#status_text').append('Checking<br/>Status...');
 	statusCheck();
 	countEm();
 
-	$('.status_reload').on( 'click', function () {
+	$('#status_reload').on( 'click', function () {
 		resetStatus();
 		statusCheck();
 		countEm();
