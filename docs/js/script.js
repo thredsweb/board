@@ -26,7 +26,6 @@ $(document).ready( function() {
 		$(aid).addClass('status_red');
 		var imag = new Image();
 		function statusCallback() {
-			console.log(company);
 			$(aid).removeClass('status_red').addClass('status_green');
 		}
 		imag.src = "https://www." + company + ".com/favicon.ico";
