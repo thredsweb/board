@@ -15,7 +15,7 @@ pApp.directive('ngwidget', function() {
 }]);
 
 function statusGreen() {
-	$(this).removeClass('status_red').addClass('status_green');
+	$(this).parent().removeClass('status_red').addClass('status_green');
 };
 
 /* $(document).ready( function() {
