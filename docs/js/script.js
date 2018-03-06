@@ -81,13 +81,14 @@ $(document).ready( function() {
 
 	function statusGo() {
 		$('#status_reload').on( 'click', function () {
-			resetStatus();
-			statusCheck();
-			countEm();
-		});
+		// 	resetStatus();
+		// 	statusCheck();
+		// 	countEm();
+		// });
 		$('#status_text').append('Checking<br/>Status...');
 			statusCheck();
 			countEm();
+			});
 	}
 
 	statusGo();
