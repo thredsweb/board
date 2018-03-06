@@ -1,8 +1,8 @@
 <div class="title">Volusion Live Status</div>
 <ul id="status_ul">
 	<li ng-repeat="site in sites">
-		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" onload="function() { statusGreen({{ site }}) };" style="display: none">
-		<a href="{{ 'https://www.' + site + '.com/' }}">{{ site }}</a>
+		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" onload="angular.element(this).scope().status = 'status_green'" style="display: none"/>
+		<a href="{{ 'https://www.' + site + '.com/' }}" class="{{ status }}">{{ site }}</a>
 	</li>
 </ul>
 <!-- need a template which reads other fields -->

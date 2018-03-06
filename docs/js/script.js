@@ -16,6 +16,7 @@ pApp.directive('ngwidget', function() {
 		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
 		"nautiquegear", "salsaritasgear", "scapparel",
 		"searaycollection", "shopsugarlands", "whalerapparel"];
+	$scope.status = 'status_red'
 }]);
 
 /* $(document).ready( function() {
