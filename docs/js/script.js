@@ -25,9 +25,9 @@ $(document).ready( function() {
 		var favid = "img." + company;
 		var aid = "a." + company;
 		$(aid).addClass('status_red');
-		var img = new Image();
-		img.src = "https://www." + company + ".com/favicon.ico";
-		img.on('load', function() {
+		var imag = new Image();
+		imag.src = "https://www." + company + ".com/favicon.ico";
+		imag.onload(function() {
 			console.log(company);
 			$(aid).removeClass('status_red').addClass('status_green');
 		});
