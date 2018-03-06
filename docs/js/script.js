@@ -11,7 +11,7 @@ pApp.directive('ngwidget', function() {
 	$scope.sites = sites;
 }]);
 
-function statusWidget() {
+$(document).ready( function() {
 
 	//These two are kindof confusingly named, sorry
 	function statusCheck() {
@@ -88,9 +88,7 @@ function statusWidget() {
 		statusCheck();
 		countEm();
 	});
-};
-
-$(document).ready( statusWidget );
+});
 
 //Bandwith Widget
 /*
