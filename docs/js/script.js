@@ -32,10 +32,6 @@ $(document).ready( function() {
 		}
 		imag.src = "https://www." + company + ".com/favicon.ico";
 		imag.onload = statusCallback;
-		// $(favid).on('load', function() {
-		// 	console.log(company);
-		// 	$(aid).removeClass('status_red').addClass('status_green');
-		// });
 	}
 
 	async function countEm() {
@@ -65,10 +61,8 @@ $(document).ready( function() {
 	}
 
 	function resetStatus() {
-		// reset the sites' classes
-		for (site in sites) {
-
-		};
+		// change status_text to "checking status..."
+		$('#status_text').empty().append('Checking Status...');
 
 		// reset the circle graph
 		var $circle = $('#svg #bar');

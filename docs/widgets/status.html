@@ -1,7 +1,6 @@
 <div class="title">Volusion Live Status</div>
 <ul id="status_ul">
 	<li ng-repeat="site in sites">
-		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" class="{{ site }}" style="display: none"/>
 		<a href="{{ 'https://www.' + site + '.com/' }}" class="{{ site }}">{{ site }}</a>
 	</li>
 </ul>
