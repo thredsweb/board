@@ -14,15 +14,19 @@ $(document).ready( function() {
 
 	var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
 
-	function checkStatus () {
+	function statusCheck() {
 		for (site in sites) {
-			var favid = "img." + sites[site];
-			var aid = "a." + sites[site];
-			$(favid).on('load', function() {
-				console.log(sites[site]);
-				$(aid).removeClass('status_red').addClass('status_green');
-			});
+			checkStatus( sites[site]);
 		}
+	}
+
+	function checkStatus (company) {
+		var favid = "img." + company;
+		var aid = "a." + company;
+		$(favid).on('load', function() {
+			console.log(company);
+			$(aid).removeClass('status_red').addClass('status_green');
+		});
 	}
 
 	async function countEm() {
@@ -65,12 +69,12 @@ $(document).ready( function() {
 	}
 
 	$('#status_text').append('Checking Status...');
-	checkStatus();
+	statusCheck();
 	countEm();
 
 	$('#status_reload').on( 'click', () => {
 		resetStatus();
-		checkStatus();
+		statusCheck();
 		countEm();
 	});
 });
