@@ -6,12 +6,17 @@ pApp.directive('ngwidget', function() {
 	}
 })
 .controller("status_widget", ['$scope', function($scope) {
-	$scope.sites = 
-		["baylinerapparel", "capriottisgear","copperfoodgear",
+	var sites = ["baylinerapparel", "capriottisgear","copperfoodgear",
 		"corppromoitems", "hatterasyachtsgear", "malibuboatsgear",
 		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
 		"nautiquegear", "salsaritasgear", "scapparel",
 		"searaycollection", "shopsugarlands", "whalerapparel"];
+	$scope.sites = sites;
+	var imgs = [];
+	for (var i=0; i<sites.length;i++) {
+		imgs.push(sites[i]);
+	};
+	$scope.imgs = imgs;
 }]);
 
 /* $(document).ready( function() {
