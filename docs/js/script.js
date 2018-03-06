@@ -71,6 +71,7 @@ $(document).ready( function() {
 		};
 
 		// reset the circle graph
+		var $circle = $('#svg #bar');
 		var status_val = 0;
 		var r = $circle.attr('r');
 		var c = Math.PI*(r*2);
@@ -92,7 +93,7 @@ $(document).ready( function() {
 	statusCheck();
 	countEm();
 
-	$('#status_reload').on( 'click', () => {
+	$('#status_reload').on( 'click', function () {
 		resetStatus();
 		statusCheck();
 		countEm();
