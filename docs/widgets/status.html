@@ -1,11 +1,10 @@
 <div class="title">Volusion Live Status</div>
-
-<!-- for site in sites, build this list -->
-<ul id="status_ul"></ul>
-	<li ng-repeat="site in sites" class="{{site}}">
+<ul id="status_ul">
+	<li ng-repeat="site in sites">
 		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" onload="statusGreen()" style="display: none">
 		<a href="{{ 'https://www.' + site + '.com/' }}">{{ site }}</a>
 	</li>
+</ul>
 <!-- need a template which reads other fields -->
 <div id="status_circle">
 	<div id="cont" data-pct="100">
