@@ -16,10 +16,10 @@ $(document).ready( function() {
 
 	function checkStatus () {
 		for (site in sites) {
-			// var favid = "img." + site;
-			// var aid = "a." + site;
-			$("img." + site).on('load', function() {
-				$("a." + site).removeClass('status_red').addClass('status_green');
+			var favid = "img." + site;
+			var aid = "a." + site;
+			$(favid).on('load', function() {
+				$(aid).removeClass('status_red').addClass('status_green');
 			});
 		}
 	}
