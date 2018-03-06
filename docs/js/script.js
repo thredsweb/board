@@ -64,6 +64,7 @@ $(document).ready( function() {
 	}
 
 	$('#status_text').append('Checking Status...');
+	checkStatus();
 	countEm();
 
 	$('#status_reload').on( 'click', () => {
