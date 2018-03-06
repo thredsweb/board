@@ -79,15 +79,19 @@ $(document).ready( function() {
 		});
 	}
 
-	$('#status_text').append('Checking<br/>Status...');
-	statusCheck();
-	countEm();
+	function () {
+		$('#status_text').append('Checking<br/>Status...');
+			statusCheck();
+			countEm();
+	}
 
-	$('#status_reload').on( 'click', function () {
-		resetStatus();
-		statusCheck();
-		countEm();
-	});
+	function () {
+		$('#status_reload').on( 'click', function () {
+			resetStatus();
+			statusCheck();
+			countEm();
+		});
+	}
 });
 
 //Bandwith Widget
