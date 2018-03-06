@@ -11,8 +11,7 @@ pApp.directive('ngwidget', function() {
 		"corppromoitems", "hatterasyachtsgear", "malibuboatsgear",
 		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
 		"nautiquegear", "salsaritasgear", "scapparel",
-		"searaycollection", "shopsugarlands", "whalerapparel",
-		"corppromoitems"];
+		"searaycollection", "shopsugarlands", "whalerapparel"];
 }]);
 
 
