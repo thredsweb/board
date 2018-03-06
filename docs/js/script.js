@@ -14,8 +14,8 @@ pApp.directive('ngwidget', function() {
 		"searaycollection", "shopsugarlands", "whalerapparel"];
 }]);
 
-function checkStatus() {
-	$(this).addClass('status_green');
+function statusGreen() {
+	$(this).removeClass('status_red').addClass('status_green');
 };
 
 /* $(document).ready( function() {
