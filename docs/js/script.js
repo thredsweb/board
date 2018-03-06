@@ -16,8 +16,8 @@ $(document).ready( function() {
 
 	function checkStatus () {
 		for (site in sites) {
-			var favid = "img." + site;
-			var aid = "a." + site;
+			var favid = "img." + sites[site];
+			var aid = "a." + sites[site];
 			$(favid).on('load', function() {
 				$(aid).removeClass('status_red').addClass('status_green');
 			});
