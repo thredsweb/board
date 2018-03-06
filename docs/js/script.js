@@ -1,9 +1,5 @@
 var pApp = angular.module('pApp', []);
 
-function statusGreen(passed) {
-	console.log(passed);
-};
-
 pApp.directive('ngwidget', function() {
 	return {
 		templateUrl : 'widgets/status.html'
@@ -16,7 +12,6 @@ pApp.directive('ngwidget', function() {
 		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
 		"nautiquegear", "salsaritasgear", "scapparel",
 		"searaycollection", "shopsugarlands", "whalerapparel"];
-	$scope.status = 'status_red'
 }]);
 
 /* $(document).ready( function() {
