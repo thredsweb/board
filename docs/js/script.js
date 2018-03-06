@@ -6,29 +6,17 @@ pApp.directive('ngwidget', function() {
 	}
 })
 .controller("status_widget", ['$scope', function($scope) {
-	var sites = ["baylinerapparel", "capriottisgear","copperfoodgear",
-		"corppromoitems", "hatterasyachtsgear", "malibuboatsgear",
-		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
-		"nautiquegear", "salsaritasgear", "scapparel",
-		"searaycollection", "shopsugarlands", "whalerapparel"];
-	$scope.sites = sites;
-	var imgs = [];
-	for (var i=0; i<sites.length;i++) {
-		imgs.push(sites[i]);
-	};
-	$scope.imgs = imgs;
+	$scope.sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
+
 }]);
 
-/* $(document).ready( function() {
+$(document).ready( function() {
 
-	var sites = ["baylinerapparel", "capriottisgear", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel", "corppromoitems"];
+	var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
 
 	function checkStatus (company) {
 		var favid = "img." + company;
 		var aid = "a." + company;
-
-		$(aid).addClass('status_red');
-
 		$(favid).on('load', function() {
 			$(aid).removeClass('status_red').addClass('status_green');
 		});
@@ -49,7 +37,7 @@ pApp.directive('ngwidget', function() {
 		}
 
 		if (isNaN(status_val)) {
-			status_val = 100; 
+			status_val = 0;
 		} else {
 			var r = $circle.attr('r');
 			var c = Math.PI*(r*2);
@@ -60,10 +48,10 @@ pApp.directive('ngwidget', function() {
 		}
 	}
 
-	function resetStatus() {
-			$('#status_ul').children().remove();
-			// reset the circle graph
-	}
+	// function resetStatus() {
+	// 		$('#status_ul').children().remove();
+	// 		// reset the circle graph
+	// }
 
 	function stallForTime() {
 		return new Promise(resolve => {
@@ -73,27 +61,25 @@ pApp.directive('ngwidget', function() {
 		});
 	}
 
-	function statusBuild() {
-		for (site in sites) {
-			var website = "https://www." + sites[site] + ".com";
-			var img = '<img class="' + sites[site] + '" style="display: none;" src="' + website + '/favicon.ico">';
-			var li = '<li> <a class="' + sites[site] + '" href="' + website + '">' + img + sites[site] + '</a></li>';
+	// function statusBuild() {
+	// 	for (site in sites) {
+	// 		var website = "https://www." + sites[site] + ".com";
+	// 		var img = '<img class="' + sites[site] + '" style="display: none;" src="' + website + '/favicon.ico">';
+	// 		var li = '<li> <a class="' + sites[site] + '" href="' + website + '">' + img + sites[site] + '</a></li>';
 	
-			$("#status_ul").append(li);
-			checkStatus(sites[site])
-		}
-	}
+	// 		$("#status_ul").append(li);
+	// 		checkStatus(sites[site])
+	// 	}
+	// }
 
 	$('#status_text').append('Checking Status...');
-	statusBuild();
 	countEm();
 
 	$('#status_reload').on( 'click', () => {
 		resetStatus();
-		statusBuild();
 		countEm();
 	});
-}); */
+});
 
 //Bandwith Widget
 /*
