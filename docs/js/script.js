@@ -16,7 +16,7 @@ pApp.directive('ngwidget', function() {
 }]);
 
 
-$(document).ready( function() {
+/* $(document).ready( function() {
 
 	var sites = ["baylinerapparel", "capriottisgear", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel", "corppromoitems"];
 
@@ -90,7 +90,7 @@ $(document).ready( function() {
 		statusBuild();
 		countEm();
 	});
-});
+}); */
 
 //Bandwith Widget
 /*
