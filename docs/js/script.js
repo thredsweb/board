@@ -1,7 +1,7 @@
 var pApp = angular.module('pApp', []);
 
-function statusGreen() {
-	console.log($(this));
+function statusGreen(passed) {
+	console.log(passed);
 };
 
 pApp.directive('ngwidget', function() {
