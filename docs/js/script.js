@@ -69,6 +69,9 @@ $(document).ready( function() {
 		var c = Math.PI*(r*2);
 		$circle.css({ strokeDashoffset: -(status_val / 100 * c)});
 		$('#cont').attr('data-pct', Math.floor(status_val));
+
+		statusCheck();
+		countEm();
 	}
 
 	function stallForTime() {
@@ -81,14 +84,11 @@ $(document).ready( function() {
 
 	function statusGo() {
 		$('#status_reload').on( 'click', function () {
-		// 	resetStatus();
-		// 	statusCheck();
-		// 	countEm();
-		// });
+			resetStatus();
+		});
 		$('#status_text').append('Checking<br/>Status...');
 			statusCheck();
 			countEm();
-			});
 	}
 
 	statusGo();
