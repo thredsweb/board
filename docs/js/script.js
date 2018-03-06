@@ -1,7 +1,7 @@
 var pApp = angular.module('pApp', []);
 
-function statusGreen(site) {
-	$(site).removeClass('status_red').addClass('status_green');
+function statusGreen() {
+	$(this).removeClass('status_red').addClass('status_green');
 };
 
 pApp.directive('ngwidget', function() {
