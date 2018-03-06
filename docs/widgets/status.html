@@ -2,7 +2,7 @@
 <ul id="status_ul">
 	<li ng-repeat="site in sites">
 		<img src="{{ 'https://www.' + site + '.com/favicon.ico' }}" class="{{ site }}" style="display: none"/>
-		<a href="{{ 'https://www.' + site + '.com/' }}" class="{{ site + ' status_red' }}">{{ site }}</a>
+		<a href="{{ 'https://www.' + site + '.com/' }}" class="{{ site }}">{{ site }}</a>
 	</li>
 </ul>
 

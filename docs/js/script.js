@@ -14,19 +14,26 @@ $(document).ready( function() {
 
 	var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
 
+	//These two are kindof confusingly named, sorry
 	function statusCheck() {
 		for (site in sites) {
-			checkStatus( sites[site]);
+			checkStatus( sites[site] );
 		}
 	}
 
 	function checkStatus (company) {
 		var favid = "img." + company;
 		var aid = "a." + company;
-		$(favid).on('load', function() {
-			console.log(company);
+		$(aid).addClass('status_red');
+		var img = new Image();
+		img.src = "https://www." + company + ".com/favicon.ico";
+		img.onload(function () {
 			$(aid).removeClass('status_red').addClass('status_green');
 		});
+		// $(favid).on('load', function() {
+		// 	console.log(company);
+		// 	$(aid).removeClass('status_red').addClass('status_green');
+		// });
 	}
 
 	async function countEm() {
@@ -55,10 +62,21 @@ $(document).ready( function() {
 		}
 	}
 
-	// function resetStatus() {
-	// 		$('#status_ul').children().remove();
-	// 		// reset the circle graph
-	// }
+	function resetStatus() {
+		// reset the sites' classes
+		for (site in sites) {
+
+		};
+
+		// reset the circle graph
+		var status_val = 0;
+		var r = $circle.attr('r');
+		var c = Math.PI*(r*2);
+		if (status_val < 0) { status_val = 0;}
+		if (status_val > 100) { status_val = 100;}
+		$circle.css({ strokeDashoffset: -(status_val / 100 * c)});
+		$('#cont').attr('data-pct', Math.floor(status_val));
+	}
 
 	function stallForTime() {
 		return new Promise(resolve => {
