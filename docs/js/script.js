@@ -60,7 +60,7 @@ $(document).ready( function() {
 
 	function resetStatus() {
 		// change status_text to "checking status..."
-		$('#status_text').empty().append('Checking<br/>Status...');
+		$('.status_text').empty().append('Checking<br/>Status...');
 
 		// reset the circle graph
 		var $circle = $('#svg #bar');
