@@ -7,12 +7,12 @@ pApp.directive('ngwidget', function() {
 })
 .controller("status_widget", ['$scope', function($scope) {
 	$scope.sites = 
-		["baylinerapparel", "capriottisgear", "capriottisgear",
-		"copperfoodgear", "corppromoitems", "hatterasyachtsgear",
-		"malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear",
-		"meridianyachtsgear", "nautiquegear", "salsaritasgear",
-		"scapparel", "searaycollection", "shopsugarlands",
-		"whalerapparel", "corppromoitems"];
+		["baylinerapparel", "capriottisgear","copperfoodgear",
+		"corppromoitems", "hatterasyachtsgear", "malibuboatsgear",
+		"marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear",
+		"nautiquegear", "salsaritasgear", "scapparel",
+		"searaycollection", "shopsugarlands", "whalerapparel",
+		"corppromoitems"];
 }]);
 
 
