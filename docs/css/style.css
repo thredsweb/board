@@ -27,12 +27,13 @@ body {
   margin-left: 5%;
   color: #00E676;
   padding-top: 25px;
-  padding-right: 15px;
 }
 
 #nav_title img {
    width: 25px;
    float: left;
+   padding-right: 15p;
+   padding-top: 5px;
 }
 
 #nav-nav li a{
