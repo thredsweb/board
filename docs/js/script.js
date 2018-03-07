@@ -4,7 +4,6 @@ var pApp = angular.module('pApp', []);
 
 pApp.directive('status_widget', function() {
 	return {
-		replace: true;
 		templateUrl : 'widgets/status.html'
 	}
 })
