@@ -364,6 +364,7 @@ h4 {
 
 /*--Begin Device Widget CSS--*/
 #container-master {
+  font-family: 'Lato', 'Open-Sans', sans-serif;
   width: 800px;
   margin: 0 auto;
   -webkit-box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.54);
