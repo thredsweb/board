@@ -406,29 +406,7 @@ h2 {
   color: #78909C;
   padding-bottom: 25px;
 }
-/*Button Styling*/
-.btn {
-  text-align: center;
-  color: #00E676;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 10px 10px;
-  background: transparent;
-  border: 2px solid #00E676;
-  border-radius: 25px;
-  width: 15%;
-  margin: 0 auto; 
-}
 
-.btn:hover {
-  background: #00E676;
-  color: #263238;
-}
-
-a {
-	
-}
 /*Footer Styling*/
 #footer {
 	padding: 25px;
