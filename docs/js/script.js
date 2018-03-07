@@ -2,7 +2,7 @@ var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoit
 
 var pApp = angular.module('pApp', []);
 
-pApp.directive('ngStatus', function() {
+pApp.directive('statwidg', function() {
 	return {
 		templateUrl : 'widgets/status.html'
 	}
