@@ -29,6 +29,11 @@ body {
   padding-top: 25px;
 }
 
+#nav_title img {
+   width: 25px;
+   float: left;
+}
+
 #nav-nav li a{
   font-weight: normal;
   font-size: 14px;
