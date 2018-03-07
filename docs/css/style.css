@@ -29,7 +29,7 @@ body {
   padding-top: 25px;
 }
 
-#nav-nav {
+#nav-nav li a{
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
