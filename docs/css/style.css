@@ -33,6 +33,9 @@ body {
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
+  color: #00E676;
+  letter-spacing: 2px;
+  padding-right: 25px;
 }
 
 #body_wrapper {
