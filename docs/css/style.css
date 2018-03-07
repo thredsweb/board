@@ -155,8 +155,9 @@ body {
 
 .subtitle {
   color: #78909C;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 15px;
 }
