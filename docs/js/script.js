@@ -7,7 +7,7 @@ pApp.directive('status_widget', function() {
 		templateUrl : 'widgets/status.html'
 	}
 })
-.controller("status_widget", ['$scope', function($scope) {
+.controller("ngStatus", ['$scope', function($scope) {
 	$scope.sites = sites;
 }]);
 
