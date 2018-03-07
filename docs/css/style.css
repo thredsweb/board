@@ -412,13 +412,14 @@ h2 {
 
 /*Footer Styling*/
 #footer {
-	padding: 25px;
+	padding: 5px 25px 25px 25px;
 }
 
 /*Styling for %*/
 #rate-wrap {
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 25px;
 }
 
 .conv-rate {
@@ -430,7 +431,7 @@ h2 {
 .conv-diff {
 	color: #ff5252;
 	font-size: 25px;
-	margin-top: -20px;
+	padding-top: 45px;
 }
 
 .arrow {
