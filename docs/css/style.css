@@ -406,7 +406,7 @@ h3 {
 }
 
 .graph-cont{
-  width: calc(100% - 40px);
+  width: calc(100% - 40px) !important;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
