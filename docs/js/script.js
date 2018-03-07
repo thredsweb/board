@@ -4,6 +4,7 @@ var pApp = angular.module('pApp', []);
 
 pApp.directive('status_widget', function() {
 	return {
+		replace: true;
 		templateUrl : 'widgets/status.html'
 	}
 })
@@ -13,7 +14,9 @@ pApp.directive('status_widget', function() {
 
 $(document).ready( function() {
 
-	//These two are kindof confusingly named, sorry
+	/* --Start Status Widget-- */
+	//This whole block is spaghetti
+
 	function statusCheck() {
 		for (site in sites) {
 			checkStatus( sites[site] );
@@ -87,7 +90,7 @@ $(document).ready( function() {
 	});
 
 	resetStatus();
-
+	/* --End Status Widget-- */
 });
 
 //Bandwith Widget
