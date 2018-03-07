@@ -1,4 +1,5 @@
 var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoitems", "hatterasyachtsgear", "malibuboatsgear", "marquislarsoncollection", "mercuryproteamgear", "meridianyachtsgear", "nautiquegear", "salsaritasgear", "scapparel", "searaycollection", "shopsugarlands", "whalerapparel"];
+
 var pApp = angular.module('pApp', []);
 
 pApp.directive('status_widget', function() {
