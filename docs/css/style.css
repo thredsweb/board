@@ -389,7 +389,8 @@ h4 {
   background: linear-gradient(to bottom, #455A64, #263238);
   z-index: -9;
   display: flex-block;
-  border-radius: 3px;  
+  border-radius: 3px;
+  padding: 25px;
 }
 h1 {
   text-align: center;
