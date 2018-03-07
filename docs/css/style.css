@@ -529,16 +529,6 @@ h3 {
 }
 
 /*--Widget F--*/
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
-
-body {
-  background: #E0E0E0;
-  font-family: 'Lato', 'Open-Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  padding: 25px 0px 25px 0px;
-}
-
 
 #container-master {
   width: 400px;
