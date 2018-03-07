@@ -2,12 +2,12 @@ var sites = ["baylinerapparel", "capriottisgear", "copperfoodgear", "corppromoit
 
 var pApp = angular.module('pApp', []);
 
-pApp.directive('status_widget', function() {
+pApp.directive('ngStatus', function() {
 	return {
 		templateUrl : 'widgets/status.html'
 	}
 })
-.controller("ngStatus", ['$scope', function($scope) {
+.controller("status_widget", ['$scope', function($scope) {
 	$scope.sites = sites;
 }]);
 
