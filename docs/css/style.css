@@ -45,6 +45,7 @@ body {
   letter-spacing: 2px;
   padding-right: 25px;
   float: right;
+  margin-top: -25px;
 }
 
 #body_wrapper {
